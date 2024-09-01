@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 40rem;
+    min-height: 27rem;
+    background-color: var(--White);
+    box-shadow: 10px 15px 30px 10px var(--Pale-blue);
+    border-radius: 12px;
+}
+
+.your-result {
+    background-image: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+    border-radius: 12px;
+    padding: 30px;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.your-result h3 {
+    color: var(--Light-lavender);
+}
+
+.score {
+    background-image: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
+    padding: 50px;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    min-width: 180px;
+}
+
+.score h1 {
+    font-size: 3rem;
+}
+
+.score p {
+    color: hsla(241, 100%, 89%, 0.7);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 13px;
+}
+
+.content h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.content p {
+    color: var(--Light-lavender);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.summary {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    margin: 8px 0px;
+    font-size: 15px;
+    border-radius: 12px;
+}
+
+.box img {
+    margin-right: 10px;
+}
+
+.box > div:nth-child(1) {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.box > div:nth-child(2) {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.box > div:nth-child(3) {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.box > div:nth-child(4) {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.reaction {
+    color: var(--Light-red);
+}
+
+.memory {
+    color: var(--Orangey-yellow);
+}
+
+.verbal {
+    color: var(--Green-teal);
+}
+
+.visual {
+    color: var(--Cobalt-blue);
+}
+
+.button {
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-image: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+}
